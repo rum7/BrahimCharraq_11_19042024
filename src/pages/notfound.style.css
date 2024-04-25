@@ -1,0 +1,27 @@
+.pageNotFound {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+  text-align: center;
+}
+
+.pageNotFound h1 {
+  margin-top: clamp(7.0625rem, 8.1188rem + -4.507vw, 4.0625rem);
+  margin-bottom: clamp(7.0625rem, 8.1188rem + -4.507vw, 4.0625rem);
+  font-size: clamp(6rem, 1.7746rem + 18.0282vw, 18rem);
+  font-weight: 700;
+  color: var(--color-main-primary);
+}
+
+.pageNotFound p {
+  font-size: clamp(1.125rem, 0.7289rem + 1.6901vw, 2.25rem);
+  font-weight: 500;
+  color: var(--color-main-primary);
+}
+
+.pageNotFound a {
+  margin-top: clamp(7.0625rem, 6.4903rem + 2.4413vw, 8.6875rem);
+  margin-bottom: clamp(7.0625rem, 6.4903rem + 2.4413vw, 8.6875rem);
+  font-size: clamp(0.875rem, 0.787rem + 0.3756vw, 1.125rem);
+}

@@ -1,0 +1,93 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-bottom: clamp(1.6875rem, 1.1813rem + 2.1596vw, 3.125rem);
+  padding: 50px;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+}
+
+.apartment-card {
+  display: flex;
+  position: relative;
+  min-width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.apartment-card h2 {
+  position: absolute;
+  top: 248px;
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+  text-wrap: balance;
+  font-size: 18px;
+  color: #fff;
+  z-index: 2;
+  transition: all .4s ease;
+
+  text-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.141),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.202),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.25),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.298),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.359),
+  100px 100px 80px rgba(0, 0, 0, 0.5);
+}
+
+.apartment-card:hover h2{
+  color: var(--color-main-primary);
+}
+
+.apartment-card img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  object-fit: cover;
+  transition: all .4s ease;
+  transform-origin: center;
+}
+
+.apartment-card:hover img{
+  transform: scale(1.25);
+}
+
+/*........................................*/
+
+@media screen and (width < 1304px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (width < 904px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (width < 504px) {
+  .gallery {
+    column-gap: clamp(0rem, -10.9012rem + 46.5116vw, 3.75rem);
+    row-gap: clamp(1.25rem, -6.0174rem + 31.0078vw, 3.75rem);
+    padding: clamp(0rem, -9.0843rem + 38.7597vw, 3.125rem);
+    border-radius: clamp(0.75rem, -1.6119rem + 10.0775vw, 1.5625rem);
+  }
+  .apartment-card {
+    width: 100%;
+    min-width: auto;
+    height: clamp(15.9375rem, 0.4942rem + 65.8915vw, 21.25rem);
+  }
+  .apartment-card h2 {
+    top: clamp(10.5rem, -4.0349rem + 62.0155vw, 15.5rem);
+  }
+}
+
+@media screen and (width < 414px) {
+  .gallery {
+    background-color: rgb(246, 246, 246, 0);
+  }
+}

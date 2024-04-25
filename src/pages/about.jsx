@@ -1,5 +1,15 @@
+import { Banner } from "@/components"
+
 export const About = () => {
     return (
-        <h2>À propos</h2>
+        <>
+            <Banner 
+                bannerClass={'banner banner-about'} 
+            />
+            <main>
+                <section className="about">
+                </section>
+            </main>
+        </>
     )
 }
