@@ -1,0 +1,6 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-bottom: clamp(1.1875rem, 0.7694rem + 1.784vw, 2.375rem);
+}

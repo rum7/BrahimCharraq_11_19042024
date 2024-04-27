@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 import ApartmentsData from "@/data"
 
@@ -18,14 +18,14 @@ export const Home = () => {
             <main>
                 <section className="gallery">
                     {data.map((apartment) => (
-                        <Link
+                        <NavLink
                             key={`apartment-${apartment.id}`}
                             to={`apartments/${apartment.id}`}
                             className="apartment-card"
                         >
                             <h2>{apartment.title}</h2>
                             <img src={apartment.cover} alt={apartment.title} />
-                        </Link>
+                        </NavLink>
                     ))}
                 </section>
             </main>

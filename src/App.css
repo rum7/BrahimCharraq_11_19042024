@@ -23,8 +23,17 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a.activeLink {
   text-decoration: underline;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
 }
 
 #root {
@@ -35,7 +44,7 @@ a:hover {
 
 /*........................................*/
 
-header,
+.header,
 main {
   max-width: 1240px;
   width: calc(100% - 4rem);
@@ -47,7 +56,7 @@ main {
   padding: 0 2rem;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   margin-top: clamp(0rem, -0.2861rem + 1.2207vw, 0.8125rem);
@@ -56,16 +65,16 @@ header {
   padding-left: 2rem;
 }
 
-header .logo {
+.header .logo {
   width: clamp(9.0625rem, 7.625rem + 6.1333vw, 13.145rem);
 }
 
-header nav {
+.header nav {
   display: flex;
   align-items: center;
 }
 
-header nav ul {
+.header nav ul {
   display: flex;
   column-gap: clamp(1.625rem, 0.9428rem + 2.9108vw, 3.5625rem);
   font-size: clamp(0.75rem, 0.4859rem + 1.1268vw, 1.5rem);
@@ -106,7 +115,7 @@ footer p {
 }
 
 @media screen and (width < 504px) {
-  header {
+  .header {
     padding: 1.25rem 1.25rem 0 1.25rem;
     width: calc(100% - 2.5rem);
   }
