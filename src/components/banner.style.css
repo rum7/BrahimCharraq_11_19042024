@@ -16,11 +16,11 @@
 }
 
 .banner-home {
-  background: url(./src/assets/_Section1.png) center / cover no-repeat;
+  background: url(/src/assets/_Section1.png) center / cover no-repeat;
 }
 
 .banner-about {
-  background: url(./src/assets/_Section2.png) center / cover no-repeat;
+  background: url(/src/assets/_Section2.png) center / cover no-repeat;
 }
 
 .banner h1 {

@@ -17,10 +17,11 @@
 
 .collapse__btn {
   transition: all .4s ease;
+  transform: rotate(180deg)
 }
 
 .collapse__btn--off {
-  transform: rotate(180deg)
+  transform: rotate(0)
 }
 
 .collapse__content {
