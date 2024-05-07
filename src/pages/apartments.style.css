@@ -1,0 +1,100 @@
+.apartment {
+  margin-top: clamp(1.6875rem, 1.1813rem + 2.1596vw, 3.125rem);
+  margin-bottom: clamp(1.6875rem, 1.1813rem + 2.1596vw, 3.125rem);
+}
+
+.apartment-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.apartment-details__info h2 {
+  font-size: clamp(1.125rem, 0.7289rem + 1.6901vw, 2.25rem);
+  font-weight: 500;
+  color: var(--color-main-primary);
+}
+
+.apartment-details__info h3 {
+  margin: 5px 0 0 0;
+  font-size: clamp(0.875rem, 0.787rem + 0.3756vw, 1.125rem);
+  font-weight: 500;
+}
+
+.apartment-details__info ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: clamp(0.625rem, 0.4049rem + 0.939vw, 1.25rem);
+}
+
+.apartment-details__info li {
+  display: flex;
+  align-items: center;
+  padding: 3px 30px;
+  height: 19px;
+  font-size: clamp(0.625rem, 0.537rem + 0.3756vw, 0.875rem);
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--color-main-primary);
+  border-radius: 10px;
+}
+
+.apartment-details__host {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.apartment-details__host .host-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0 10px;
+}
+
+.host-info img {
+  width: clamp(2rem, 1.2958rem + 3.0047vw, 4rem);
+  border-radius: 50%;
+}
+
+.host-info p {
+  font-size: clamp(0.75rem, 0.618rem + 0.5634vw, 1.125rem);
+  font-weight: 500;
+  text-align: right;
+  white-space: pre-line;
+  color: var(--color-main-primary);
+}
+
+.apartment-more {
+  display: flex;
+  flex-direction: row;
+  gap: 0 76px;
+  margin-top: clamp(0.8125rem, 0.5704rem + 1.0329vw, 1.5rem);
+}
+
+.apartment-more .collapse {
+  flex: 50%;
+}
+
+.apartment .collapse header h2 {
+  font-size: clamp(0.8125rem, 0.7025rem + 0.4695vw, 1.125rem);
+}
+
+/*........................................*/
+
+@media screen and (width < 820px) {
+  .apartment-details {
+    flex-direction: column;
+    gap: 16px 0;
+  }
+
+  .apartment-details__host {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .apartment-more {
+    flex-direction: column;
+    gap: 30px 0;
+  }
+}

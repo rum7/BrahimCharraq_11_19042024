@@ -1,0 +1,8 @@
+.host-rate ul {
+  display: flex;
+  column-gap: clamp(0.411875rem, 0.2213rem + 0.8131vw, 0.953125rem);
+}
+
+.host-rate ul img {
+  width: clamp(0.838125rem, 0.5886rem + 1.0648vw, 1.546875rem);
+}
