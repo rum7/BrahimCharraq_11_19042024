@@ -15,7 +15,7 @@ export const Apartments = () => {
     const currentApartmentData = data.filter(apartment => apartment.id === apartmentId)
 
     if (!currentApartmentData[0]) {
-        return (<Navigate to="/" />)
+        return (<Navigate to="*" />)
     } else {
         return (
             <main>
